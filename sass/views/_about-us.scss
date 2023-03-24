@@ -1,0 +1,41 @@
+.about-us {
+    text-align: center;
+    p {
+        margin-top: 20px;
+    }
+    input {
+        background-color: $color-beaver;
+        color: $color-drabdarkbrown;
+        font-weight: 700;
+        padding: 5px;
+    }
+}
+.characteristics-section {
+    .benefits, .user-experience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h4 {
+        font-weight: 700;
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .characteristics-section {
+        text-align: center;
+        
+        h4 {
+            font-size: 3rem;
+        }
+        .benefits, .user-experience{
+            padding: 40px;
+            font-size: 2rem;
+        }
+    }
+}

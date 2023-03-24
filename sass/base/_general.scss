@@ -1,0 +1,15 @@
+@import '../utilities/variables';
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: $color-dun;
+    color: $color-eerieblack;
+}
+
+section {
+    margin: 15px;
+    padding: 15px;
+    box-shadow: $box-shadow;
+}

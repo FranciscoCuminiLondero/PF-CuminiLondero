@@ -1,4 +1,3 @@
-/* GENERAL */
 * {
   padding: 0;
   margin: 0;
@@ -18,13 +17,12 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* HEADER */
 #header {
   padding: 0;
 }
 #header .navbar {
   background-color: rgba(209, 198, 184, 0.7607843137) !important;
-  box-shadow: 0px 0px 10px #333;
+  box-shadow: 0px 0px 10px #000;
   font-weight: 700;
   padding: 10px;
 }
@@ -44,149 +42,27 @@ section {
   display: none;
 }
 
-/* MAIN - index */
-.introduction .hide {
-  display: none;
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  #header {
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #header .header-logo {
+    align-content: center;
+  }
+  #header .header-logo h1 {
+    display: inline;
+    font-size: x-large;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+  #header .header-logo h1 span {
+    color: #7ED957;
+  }
 }
-
-.title-featured-models h2 {
-  text-align: center;
-  font-weight: bolder;
-}
-
-.featured-models {
-  display: grid;
-  grid-template-columns: repeat(2, 10rem);
-  grid-template-rows: repeat(2, 13rem);
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(209, 198, 184, 0.2901960784);
-}
-.card-body a {
-  margin-top: 20px;
-  border: #0c1104;
-  background-color: #6c6966;
-}
-.card-body .card-title {
-  font-size: 0.75rem;
-}
-
-/* MAIN - about-us */
-.about-us {
-  text-align: center;
-}
-.about-us p {
-  margin-top: 20px;
-}
-.about-us input {
-  background-color: #A69687;
-  color: #2F3714;
-  font-weight: 700;
-  padding: 5px;
-}
-
-/*CHARACTERISTICS SECTION - about-us*/
-.characteristics-section .benefits, .characteristics-section .user-experience {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.characteristics-section h4 {
-  font-weight: 700;
-  text-align: center;
-}
-.characteristics-section ul {
-  list-style: none;
-  padding: 5px 10px;
-}
-
-/*MAIN - branch-offices*/
-.branch-map i {
-  color: red;
-}
-.branch-map ol {
-  list-style: none;
-}
-.branch-map ol span {
-  padding-left: 5px;
-  font-weight: 700;
-}
-.branch-map ul {
-  list-style: none;
-}
-
-/*MAIN - contact*/
-.contact-form {
-  text-align: center;
-}
-.contact-form label, .contact-form span {
-  background-color: #d1c6b8;
-  color: #1D1F12;
-}
-.contact-form button {
-  margin-top: 10px;
-  background-color: #A69687;
-  border-color: #1D1F12;
-}
-
-.branch-map h2 {
-  text-align: center;
-}
-
-.contact {
-  text-align: center;
-  font-size: 1.5rem;
-}
-.contact ul {
-  list-style: none;
-}
-.contact ul li a {
-  text-decoration: none;
-  color: #1D1F12;
-}
-.contact ul span {
-  font-weight: 700;
-  padding-left: 5px;
-}
-
-/*MAIN - products*/
-.cars-models, .memberships {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
-}
-.cars-models article, .memberships article {
-  border: #A69687 2px solid;
-  margin: 5px;
-  padding: 10px;
-}
-.cars-models article h3, .memberships article h3 {
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-.cars-models article ul, .memberships article ul {
-  padding: 0;
-}
-.cars-models article ul li, .cars-models article p, .memberships article ul li, .memberships article p {
-  list-style: none;
-  font-size: 0.5rem;
-}
-.cars-models article span, .memberships article span {
-  font-weight: 700;
-}
-
-.memberships-section h2 {
-  text-align: center;
-}
-
-/* FOOTER */
 #footer {
   padding: 20px 0;
   margin: 0;
@@ -261,26 +137,54 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
-  /*HEADER*/
-  #header {
-    height: 100vh;
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  #footer img {
+    width: 5rem;
   }
-  #header .header-logo {
-    align-content: center;
+  #footer .footer-media {
+    flex-direction: row;
   }
-  #header .header-logo h1 {
-    display: inline;
-    font-size: x-large;
-    font-weight: 700;
-    padding-left: 10px;
+  #footer .footer-media .suscribe-newsletter p {
+    margin-bottom: 0;
+    font-weight: bold;
   }
-  #header .header-logo h1 span {
-    color: #7ED957;
+  #footer .footer-media #email-newsletter {
+    width: 350px;
   }
-  /*INDEX*/
+}
+.introduction .hide {
+  display: none;
+}
+
+.title-featured-models h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.featured-models {
+  display: grid;
+  grid-template-columns: repeat(2, 10rem);
+  grid-template-rows: repeat(2, 13rem);
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(209, 198, 184, 0.2901960784);
+}
+.card-body a {
+  margin-top: 20px;
+  border: #0c1104;
+  background-color: #6c6966;
+}
+.card-body .card-title {
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
   .introduction .hide {
     display: inline-block;
   }
@@ -307,7 +211,35 @@ section {
     font-size: 1.2rem;
     font-weight: 700;
   }
-  /*ABOUT US*/
+}
+.about-us {
+  text-align: center;
+}
+.about-us p {
+  margin-top: 20px;
+}
+.about-us input {
+  background-color: #A69687;
+  color: #2F3714;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.characteristics-section .benefits, .characteristics-section .user-experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.characteristics-section h4 {
+  font-weight: 700;
+  text-align: center;
+}
+.characteristics-section ul {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+@media only screen and (min-width: 768px) {
   .characteristics-section {
     text-align: center;
   }
@@ -318,14 +250,63 @@ section {
     padding: 40px;
     font-size: 2rem;
   }
-  /*BRANCH OFFICES*/
+}
+.branch-map i {
+  color: red;
+}
+.branch-map ol {
+  list-style: none;
+}
+.branch-map ol span {
+  padding-left: 5px;
+  font-weight: 700;
+}
+.branch-map ul {
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
   .map-section {
     display: flex;
   }
   .map-section div {
     margin: 10px;
   }
-  /*CONTACT*/
+}
+.contact-form {
+  text-align: center;
+}
+.contact-form label, .contact-form span {
+  background-color: #d1c6b8;
+  color: #1D1F12;
+}
+.contact-form button {
+  margin-top: 10px;
+  background-color: #A69687;
+  border-color: #1D1F12;
+}
+
+.branch-map h2 {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.contact ul {
+  list-style: none;
+}
+.contact ul li a {
+  text-decoration: none;
+  color: #1D1F12;
+}
+.contact ul span {
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+@media only screen and (min-width: 768px) {
   .list-map {
     display: flex;
     padding-top: 20px;
@@ -333,6 +314,37 @@ section {
   .list-map .list {
     width: 75%;
   }
+}
+.cars-models, .memberships {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.cars-models article, .memberships article {
+  border: #A69687 2px solid;
+  margin: 5px;
+  padding: 10px;
+}
+.cars-models article h3, .memberships article h3 {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.cars-models article ul, .memberships article ul {
+  padding: 0;
+}
+.cars-models article ul li, .cars-models article p, .memberships article ul li, .memberships article p {
+  list-style: none;
+  font-size: 0.5rem;
+}
+.cars-models article span, .memberships article span {
+  font-weight: 700;
+}
+
+.memberships-section h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
   /*PRODUCTS*/
   .cars-models {
     grid-template-columns: repeat(3, 1fr);
@@ -361,20 +373,6 @@ section {
     padding: 5px;
     background-color: #A69687;
     border-color: #1D1F12;
-  }
-  /*FOOTER*/
-  #footer img {
-    width: 5rem;
-  }
-  #footer .footer-media {
-    flex-direction: row;
-  }
-  #footer .footer-media .suscribe-newsletter p {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
-  #footer .footer-media #email-newsletter {
-    width: 350px;
   }
 }
 
