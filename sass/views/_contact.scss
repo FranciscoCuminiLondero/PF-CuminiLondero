@@ -1,13 +1,19 @@
 .contact-form {
     text-align: center;
     label, span {
-        background-color: $color-dun;
+        background-color: $color-strongbone;
         color: $color-eerieblack;
     }
     button {
-        margin-top: 10px;
-        background-color: $color-beaver;
-        border-color: $color-eerieblack;
+        margin-top: 20px;
+        background-color: #6c6966;
+        border: none;
+        &:hover {
+            background-color: $color-sgbusgreen;
+        }
+        &:active {
+            background-color: $color-sgbusgreen;
+        }
     }
 }
 
@@ -18,10 +24,26 @@
 }
 
 .contact {
+    padding: 20px 0px;
     text-align: center;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    i {
+        font-size: 2rem;
+        margin: 15px;
+        &:hover {
+            color: $color-sgbusgreen;
+            transform: scale(1.5);
+            transition-duration: 0.5s ;
+        }
+    }
     ul {
         list-style: none;
+        margin: 10px;
+        text-align: left;
         li a {
             text-decoration: none;
             color: $color-eerieblack;
@@ -34,6 +56,16 @@
 }
 
 @media only screen and (min-width:768px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 50%;
+        }
+    }
     .list-map {
         display: flex;
         padding-top: 20px;

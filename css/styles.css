@@ -85,6 +85,10 @@ section {
 #footer img {
   width: 15%;
 }
+#footer img:hover {
+  transform: rotate(360deg);
+  transition-duration: 3s;
+}
 #footer .footer-media {
   width: 100%;
   display: flex;
@@ -162,6 +166,8 @@ section {
   }
   #footer i:hover {
     color: #7ED957;
+    transform: scale(1.5);
+    transition-duration: 0.5s;
   }
 }
 .introduction .hide {
@@ -290,13 +296,19 @@ section {
   text-align: center;
 }
 .contact-form label, .contact-form span {
-  background-color: #d1c6b8;
+  background-color: #D9CCBD;
   color: #1D1F12;
 }
 .contact-form button {
-  margin-top: 10px;
-  background-color: #A69687;
-  border-color: #1D1F12;
+  margin-top: 20px;
+  background-color: #6c6966;
+  border: none;
+}
+.contact-form button:hover {
+  background-color: #7ED957;
+}
+.contact-form button:active {
+  background-color: #7ED957;
 }
 
 .branch-map h2 {
@@ -304,11 +316,27 @@ section {
 }
 
 .contact {
+  padding: 20px 0px;
   text-align: center;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact i {
+  font-size: 2rem;
+  margin: 15px;
+}
+.contact i:hover {
+  color: #7ED957;
+  transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 .contact ul {
   list-style: none;
+  margin: 10px;
+  text-align: left;
 }
 .contact ul li a {
   text-decoration: none;
@@ -320,6 +348,16 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form {
+    width: 50%;
+  }
   .list-map {
     display: flex;
     padding-top: 20px;

@@ -7,6 +7,10 @@
     justify-content: center;
     img {
         width: 15%;
+        &:hover {
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
     }
     .footer-media {
         width: 100%;
@@ -62,7 +66,7 @@
             border: none;
             border-radius: 5px;
             &:hover {
-                background-color: #7ED957;
+                background-color: $color-sgbusgreen;
             }
             &::placeholder {
                 color: #ffffff51;
@@ -86,6 +90,8 @@
             display: inline-block !important;
             &:hover {
                 color: $color-sgbusgreen;
+                transform: scale(1.5);
+                transition-duration: 0.5s ;
             }
         }
     }
