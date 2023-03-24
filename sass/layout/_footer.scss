@@ -1,18 +1,15 @@
 #footer {
-    padding: 20px 0;
+    width: 100%;
     margin: 0;
+    padding: 20px 0;
     background-color: $color-beaver;
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.64);
-    .footer-logo {
-        margin: 0;
-        padding: 0;
-    }
+    justify-content: center;
     img {
         width: 15%;
     }
     .footer-media {
         width: 100%;
-        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -22,16 +19,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            i {
+                display: none;
+            }
+            button {
+                margin: 15px;
+                font-size: 0.75rem;
+            }
         }
-        
-        .direction p {
-            margin: 0;
-        }
-        
-        .direction button {
-            font-size: 0.75rem;
-        }
-        
         .suscribe-newsletter {
             display: flex;
             flex-direction: column;
@@ -39,7 +34,6 @@
             align-items: center;
             text-align: center;
         }
-        
         .social-media {
             width: 25%;
             display: flex;
@@ -47,22 +41,22 @@
             align-items: center;
             text-align: center;
         }
-        
-        .direction a, .social-media a {
-            text-decoration: none;
-            color:#0c1104;
-            padding: 5px;
+        p {
+            margin: 10px 0px 0px 0px;
+            font-weight: 700;
         }
-
         i {
             font-size: 2rem;
             color: #333;
-            &:hover {
-                color: #7ED957;
-            }
+            padding: 8px ;
+        }
+        a {
+            text-decoration: none;
+            color:#0c1104;
         }
         input {
-            padding: 3px;
+            padding: 5px;
+            margin: 5px;
             background-color: #6c6966;
             color: #fff;
             border: none;
@@ -84,14 +78,14 @@
         }
         .footer-media {
             flex-direction: row;
-            .suscribe-newsletter {
-                p {
-                    margin-bottom: 0;
-                    font-weight: bold;
-                }
-            }
             #email-newsletter {
                 width: 350px;
+            }
+        }
+        i {
+            display: inline-block !important;
+            &:hover {
+                color: $color-sgbusgreen;
             }
         }
     }
