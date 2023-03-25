@@ -373,11 +373,10 @@ section {
     width: 50%;
   }
   .list-map {
+    padding: 20px;
     display: flex;
-    padding-top: 20px;
-  }
-  .list-map .list {
-    width: 75%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .cars-models, .memberships {
