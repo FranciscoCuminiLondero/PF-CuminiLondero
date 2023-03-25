@@ -230,18 +230,27 @@ section {
     font-size: 1.2rem;
     font-weight: 700;
   }
+  .featured-models .btn:hover {
+    background-color: #7ED957;
+  }
 }
 .about-us {
   text-align: center;
+  padding: 20px;
 }
 .about-us p {
   margin-top: 20px;
 }
-.about-us input {
-  background-color: #A69687;
-  color: #2F3714;
-  font-weight: 700;
+.about-us .button {
   padding: 5px;
+  margin: 5px;
+  background-color: #6c6966;
+  color: #fff;
+  border-color: none;
+  border-radius: 5px;
+}
+.about-us .button:hover {
+  background-color: #7ED957;
 }
 
 .characteristics-section .benefits, .characteristics-section .user-experience {
@@ -262,12 +271,17 @@ section {
   .characteristics-section {
     text-align: center;
   }
+  .characteristics-section img:hover {
+    transform: rotateX(360deg);
+    transition-duration: 3s;
+    transition-delay: 0.2s;
+  }
   .characteristics-section h4 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .characteristics-section .benefits, .characteristics-section .user-experience {
-    padding: 40px;
-    font-size: 2rem;
+    padding: 50px;
+    font-size: 1.5rem;
   }
 }
 .branch-map i {

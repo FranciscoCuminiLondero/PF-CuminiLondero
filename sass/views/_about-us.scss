@@ -1,13 +1,19 @@
 .about-us {
     text-align: center;
+    padding: 20px;
     p {
         margin-top: 20px;
     }
-    input {
-        background-color: $color-beaver;
-        color: $color-drabdarkbrown;
-        font-weight: 700;
+    .button {
         padding: 5px;
+        margin: 5px;
+        background-color: $color-dimgray;
+        color: #fff;
+        border-color: none;
+        border-radius: 5px;
+        &:hover {
+            background-color: $color-sgbusgreen;
+        }
     }
 }
 .characteristics-section {
@@ -29,13 +35,17 @@
 @media only screen and (min-width:768px) {
     .characteristics-section {
         text-align: center;
-        
+        img:hover {
+            transform: rotateX(360deg);
+            transition-duration: 3s;
+            transition-delay: 0.2s;
+        }
         h4 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         .benefits, .user-experience{
-            padding: 40px;
-            font-size: 2rem;
+            padding: 50px;
+            font-size: 1.5rem;
         }
     }
 }
